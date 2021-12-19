@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Bela Forma</title>
+	<title>Fit Home</title>
 	<link rel="icon" href="images/logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -23,5 +23,56 @@
 			<li><a href="html/receitas.html">Receitas</a></li>
 		</ul>
 	</nav>
+	<!--Calculadora IMC-->
+	<div class="container-imc">
+		<div class="texto-imc">
+			<h2>O que é IMC?</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corporis odio saepe velit perspiciatis! Saepe id consequuntur libero et laborum velit? Deleniti delectus aperiam, rerum porro aspernatur necessitatibus! Necessitatibus, recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit impedit ipsum cumque unde voluptatum nostrum culpa praesentium excepturi harum perferendis dolor, enim beatae autem consequatur provident, nobis eius natus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam laudantium soluta suscipit eum blanditiis harum quidem consequuntur eos veniam adipisci. Blanditiis quisquam commodi nobis error quas voluptatem aliquid magni recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et voluptas nemo consectetur, repudiandae dolorem numquam minus distinctio eveniet dignissimos fugiat illum dicta eius consequatur necessitatibus? Aperiam consequatur quaerat quis.</p>
+		</div>
+		<main>
+			<h2>Calculadora IMC</h2>
+			<div class="escolha" id="escolha">
+				<div class="opcao1">
+					<input id="feminino" type="radio" name="tipo" value="feminino" required>
+					<label for="feminino">Feminino</label>
+				</div>
+				<div class="opcao2">
+					<input id="masculino" type="radio" name="tipo" value="masculino" required>
+					<label for="masculino">Masculino</label>
+				</div>
+			</div>
+			<div class="inputs">
+				<div class="inputidade">
+					<h5>Idade: </h5><input type="text" id="idade" name="idade" placeholder="em anos" autocomplete="off" maxlength="2" required>
+				</div>
+				<div class="inputpeso">
+					<h5>Peso: </h5><input type="text" id="peso" name="peso" placeholder="em quilogramas" autocomplete="off" maxlength="4" required>
+				</div>
+				<div class="inputaltura">
+					<h5>Altura: </h5><input type="text" id="altura" name="altura" placeholder="em centímetros" autocomplete="off" maxlength="3" required>
+				</div>
+			</div>
+			<button id="calcular">Calcular</button>
+			<div class="resultado" id="resultador">
+				<div class="resultado2">
+					<h2 id="resultado-titulo"></h2>
+					<p id="resultado"></p>
+				</div>
+			</div>
+		</main>
+		<script src="js/script.js"></script>
+	</div>
+	<!--Sobre nós-->
+	<div class="sobre-nos">
+		<div class="sobrenos-img"></div>
+		<div class="sobrenos-texto">
+			<h2>Sobre Nós</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque esse id doloremque dicta iure deleniti voluptatem corrupti neque maxime. Ex, officiis odit mollitia enim officia ratione dicta tempore magnam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, commodi numquam. Cum et maxime dolorum delectus molestiae commodi quas doloremque! Cum ducimus delectus explicabo eum totam in sint veritatis odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt unde dicta accusamus, doloremque ad labore maiores minima voluptas ex nihil sequi impedit distinctio omnis hic eaque deleniti ea mollitia? Laudantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati id itaque, quisquam voluptatum eius possimus vero ipsam culpa similique dolorem commodi iusto, neque facere aut repellat voluptatibus corporis? Vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eaque odit numquam velit, in consequuntur esse odio exercitationem totam vero nostrum ducimus reiciendis ab animi tenetur! Quae quidem libero dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia necessitatibus explicabo fuga laudantium? Autem, iure minus ipsam cupiditate eligendi corporis ipsa repudiandae consequatur cum, laborum, a reiciendis pariatur atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore laborum perferendis? Eveniet voluptate officia dicta, laudantium at sapiente hic sequi minima, non nihil et excepturi eius eaque. Eos, iste? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam fuga quos nemo quis illum excepturi eos ducimus numquam delectus laboriosam aliquid blanditiis repudiandae aut, repellendus praesentium voluptatem vitae voluptates. Nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum amet aliquid tempora reiciendis recusandae porro mollitia, perferendis architecto deserunt optio sit repellat, doloremque consectetur voluptates? Velit quia debitis a accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique asperiores nostrum maxime laudantium modi unde facere vero quidem, in, beatae corporis aut totam assumenda! Beatae tenetur totam repellendus reiciendis.</p>
+		</div>
+		<div class="redes-sociais">
+			<a href="https://www.instagram.com/belaformaifc/  "><img src="/images/instagram.svg" alt="instagram"></a>
+			<a href="https://twitter.com/belaformaifc"><img src="/images/twitter.svg" alt="twitter"></a></div>
+		</div>
+	</div>
 </body>
 </html>

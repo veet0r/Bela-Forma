@@ -1,12 +1,224 @@
-body{
-	font-family: monospace;
-	background-color: #EADEE0;
+/*
+	Calculadora IMC
+*/
+.container-imc{
+	width: 90%;
+	margin: 25px auto 0 auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 }
-/*.logoimg{
-	margin-bottom: -10px;
-}*/
-.box{
-	height: 100vh;
+.texto-imc{
+	width: 65%;
+}
+.texto-imc h2{
+	text-align: center;
+	margin-bottom: 15px;
+}
+.texto-imc p{
+	text-align: justify;
+}
+main{
+	background-color: #292929;
+	color: white;
+	border-radius: 10px;
+	width: 30%;
+	margin-left: 5%;
+	transition: .8s all;
+}
+main h2{
+	text-align: center;
+	margin: 15px auto;
+}
+.escolha{
+	margin: 0 auto;
+	text-align: center;
+}
+.escolha input{
+    display: none;
+}
+.escolha label{
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #292929;
+    border: 1px solid white;
+    border-radius: 20px;
+	margin: 0 20px;
+    transition: .5s all;
+    font-size: bold;
+    color: white;
+}
+.escolha input[type=radio]:checked + label{
+    background-color: #a1b900;
+    color: #fff;
+    border-color: #a1b900;
+}
+.opcao1,.opcao2{
+   display: inline-block;
+}
+.escolha input[type=radio]:hover + label{
+    cursor: pointer;
+}
+.inputs{
+	width: 75%;
+	margin: 15px auto;
+}
+.inputaltura, .inputidade, .inputpeso{
+	text-align: left;
+	margin: 20px auto;
+}
+.inputs input[type=text]{
+	margin-top: 4px;
 	width: 100%;
-	background-color: black;
+	height: 40px;
+	padding: 5px;
+	outline: none;
+	background-color: #292929;
+	border: 2px solid #a1b900;
+	border-radius: 2px;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+}
+main button{
+    font-size: 18px;
+    display: block;
+    margin: 15px auto;
+    background-color: #292929;
+    border: 0;
+    outline: 0;
+    padding: 10px 30px;
+    color: #a1b900;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    font-family: monospace;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+main button:hover{
+    background: #a1b900;
+    color: white;
+    transition-delay: .5s;
+    box-shadow: 0 0 25px #a1b900;
+}
+main button:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #a1b900;
+    border-left: 2px solid #a1b900;
+    transition: .5s;
+}
+main button:hover:before{
+    width: 100%;
+    height: 100%;
+}
+main button:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #a1b900;
+    border-right: 2px solid #a1b900;
+    transition: .5s;
+}
+main button:hover:after{
+    width: 100%;
+    height: 100%;
+}
+.resultado{
+	transition: 1.5s all;
+	width: 90%;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	color: white;
+}
+@media (max-width: 1430px){
+	.escolha label{
+		margin: 5px 20px;
+	}
+}
+@media (max-width: 1235px){
+	.container-imc{
+		display: block;
+	}
+	main{
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 9px;
+	}
+	main > h2{
+		padding-top: 25px;
+	}
+	.texto-imc{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+/*
+	Sobre Nós
+*/
+.sobre-nos{
+	width: 90%;
+	margin: 25px auto;
+	background-color: #292929;
+	border-radius: 18px;
+	position: relative;
+	padding: 35px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+.sobrenos-img{
+	height: 500px;
+	width: 30%;
+	margin: 0 2% 0 5%;
+	background-image: url(../images/segurando.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 1px;
+}
+.sobrenos-texto{
+	color: white;
+	width: 56%;
+	margin: 0 5% 0 2%;
+}
+.sobrenos-texto h2{
+	text-align: center;
+}
+.redes-sociais{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0 8px 8px 0;
+}
+.redes-sociais img{
+	width: 50px;
+	height: 50px;
+	margin: 0 5px;
+}
+@media (max-width: 1350px){
+	.sobre-nos{
+		display: block;
+	}
+	.sobrenos-img{
+		margin: 0 auto;
+		height: 350px;
+		width: 60%;
+	}
+	.sobrenos-texto{
+		margin: 25px;
+		width: 90%;
+		padding-bottom: 25px;
+	}
 }

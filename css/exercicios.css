@@ -1,152 +1,67 @@
-.conteiner{
-    width: 100%;
-    text-align: center;
+.container{
+    margin: 30px auto;
+    width: 80%;
 }
-h1{
-    font-weight: normal;
-    font: size 35px;
-    position: relative;
-    margin: 40px 0;
+.container .titulo{
+    width: max-content;
+    margin: 60px auto 30px auto;
+    color: #a1b900;
 }
-
-h1::before{
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 3px;
-    background-color: #D4DD9B;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: animate 4s linear infinite;
+#de-lazer{
+    color: #a1b900;
+    padding: 5px;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #EADEE0 50%, #a1b900 50%);
+    animation: saudaveis 1s both .75s;
 }
-@keyframes animate{
-    0%{
-        width: 100px;
-    }
-    50%{
-        width: 200px;
-    }
+@keyframes saudaveis{
     100%{
-        width: 100px;
+        color: white;
+        background-position: -100% 0;
     }
 }
-.galeria{
-    width: 90%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 25px;
+.left{
+    justify-content: left;
 }
-
-.foto{
-    position: relative;
-    height: 230px;
-    border-radius: 5px;
-
+.left img{
+    margin-right: 25px;
 }
-
-.foto img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+.right{
+    justify-content: right;
+    text-align: right;
+    margin-right: 0;
+    float: right;
 }
-
-.foto::before{
-    content: "Nome do Exercício";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
-    width: 100%;
-    margin-top: -100px;
-    opacity: 0;
-    transition: .3s;
-    transition-delay: .2s;
-
+.right img{
+    margin-left: 25px;
 }
-.foto::after{
-    content:"";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-    height: 100%;
-    background-color: rgba(0,0,0,.4);
-    transition: .3s;
+.atividade{
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    margin: 25px 0;
 }
-
-.foto:hover::after{
-    height:100%;
-
+.atividade img{
+    width: 275px;
+    height: 275px;
 }
-
-.foto:hover::before{
-    margin-top: 0;
-    opacity: 1;
+.diferenca p{
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
-
-.rodape {
-    padding:40px 0;
-    background-color: #eadee0;
-    color:#4b4c4d;
-  }
-  
-  .rodape
- ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
-  
-.rodape li {
-    padding:0 10px;
-  }
-  
-.rodape ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-.rodape ul a:hover {
-    opacity:1;
-  }
-  
-.rodape .social {
-    text-align:center;
-    padding-bottom:25px;    
-  }
-  
-  .rodape .social > a {
-    padding-top: 1px;
-    font-size:35px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius: 50%;
-    border:1px solid #c6c6c6;
-    margin:0 15px;
-    color: inherit;
-    opacity:0.75;
-  }
-  
-  .rodape .social > a:hover {
-    opacity:0.9;
-  }
-  
-  .rodape .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#aaa;
-    margin-bottom:0;
-  }
+@media (max-width: 1175px){
+    .atividade{
+        width: 100%;
+    }
+}
+@media (max-width: 715px){
+    .atividade{
+        display: block;
+        text-align: center;
+        margin: 100px 0;
+    }
+    .atividade img{
+        margin: 25px auto;
+    }
+}

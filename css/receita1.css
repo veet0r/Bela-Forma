@@ -1,10 +1,12 @@
-.imagemreceita1{
+.imagem-parallax{
     max-width: auto;
     margin: 0 auto;
     background: #EADEE0;
 }
 .parallax{
-    background: url("../images/comida2.png") no-repeat center;
+    background-image: url("../images/comida2.png");
+	background-position: center;
+	background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
@@ -38,7 +40,7 @@
 	width: 30px;
 	height: 30px;
 	display: inline;
-	margin-bottom: 3px;
+	margin-bottom: -8px;
 }
 .informacoes2{
 	width: 100%;
@@ -64,20 +66,56 @@
 #first{
 	margin-top: 20px;
 }
-.imagemreceita2{
+.imagemreceita{
     width: 100%;
 	min-width: 650px;
-    background: url("../images/vitaminadebanana.jpg");
     padding-left: 15px;
     padding-top: 400px;
     background-size: cover;
 	background-repeat: no-repeat;
     background-position: center;
 }
+.img1{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img2{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img3{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img4{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img5{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img6{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img7{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img8{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img9{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img10{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img11{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
+.img12{
+	background-image: url("../images/vitaminadebanana.jpg");
+}
 .informacoes3{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 25px;
+	margin-bottom: 5%;
 }
 .beneficios{
 	width: 48%;
@@ -128,6 +166,11 @@
 @media (max-width: 1076px){
 	.informacoes{
 		display: block;
+		margin-top: 5%;
+	}
+	.tempo h4{
+		font-size: 2em;
+		margin-top: 25px;
 	}
 	.titulo-desc, .tempodepreparo{
 		width: 100%;
@@ -143,6 +186,9 @@
 	}
 	.imagemreceita2{
 		padding-top: 300px;
+	}
+	.modo{
+		margin-top: 25px;
 	}
 }
 @media (max-width: 700px){
