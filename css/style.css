@@ -37,12 +37,20 @@ nav{
 	background: #000000a4;
 	height: 80px;
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
 label.logo, label.logo2{
 	color: black;
 	font-size: 30px;
-	line-height: 80px;
-	padding-left: 5%;
+	margin-left: 20px;
 	font-weight: bold;
 }
 label.logo2{
@@ -51,19 +59,19 @@ label.logo2{
 .logo > a,.logo2 > a{
     color: #C1D28C;
     user-select: none;
-    padding: 8px;
+    padding: 10px 13px;
 }
 .logo a{
     display: inline;
 }
 .logoimg{
-    margin-top: 18px;
     display: inline;
     width: 40px;
     height: 40px;
 }
 nav ul{
 	float: right;
+	margin: 0;
 	margin-right: 20px;
 	list-style: none;
 }
@@ -139,7 +147,7 @@ nav a.ativo,nav li a:hover{
 		line-height: 30px;
 	}
 	nav ul li a{
-		font-size: 32px;
+		font-size: 28px;
 	}
 	nav a.ativo,nav a:hover{
 		background: none;
