@@ -1,0 +1,148 @@
+.imagemreceita1{
+    max-width: auto;
+    margin: 0 auto;
+    background: #EADEE0;
+}
+.parallax{
+    background: url("../images/comida2.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.informacoes{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.titulo-desc{
+	width: 48%;
+	margin-left: 2%;
+    text-align: justify;
+	margin-top: 5%;
+}
+.tempodepreparo{
+	width: 48%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
+	margin-right: 2%;
+}
+.tempodepreparo p{
+	text-align: center;
+}
+.tempo h4{
+	font-size: 27px;
+}
+.tempo img{
+	width: 30px;
+	height: 30px;
+	display: inline;
+	margin-bottom: 3px;
+}
+.informacoes2{
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.image-container{
+	width: 48%;
+	margin: 0 0 0 2%;
+}
+.ingredientes{
+	width: 48%;
+	margin: 0 2% 0 0;
+	text-align: center;
+}
+.ingredientes h3{
+	font-size: 27px;
+	margin: 0 2%;
+	text-align: center;
+}
+#first{
+	margin-top: 20px;
+}
+.imagemreceita2{
+    width: 100%;
+	min-width: 650px;
+    background: url("../images/vitaminadebanana.jpg");
+    padding-left: 15px;
+    padding-top: 400px;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+.informacoes3{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+.beneficios{
+	width: 48%;
+	margin: 0 2%;
+}
+.modo{
+	text-align: center;
+	width: 48%;
+	margin: 0 0 2% 0;
+}
+.modo p{
+	width: 75%;
+	margin: 0 auto;
+}
+@media (max-width: 1130px){
+	.informacoes2{
+		display: block;
+	}
+	.image-container, .ingredientes{
+		width: 96%;
+		margin: 0 auto;
+	}
+	.imagemreceita2{
+		width: 70%;
+		min-width: 0;
+		margin: 0 auto;
+	}
+	.ingredientes{
+		margin-top: 15px;
+	}
+}
+@media (max-width: 809px){
+	.informacoes{
+		display: block;
+	}
+	.titulo-desc, .tempodepreparo{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.tempodepreparo{
+		display: inline-block;
+	}
+	.titulo-desc p{
+		text-align: justify;
+		margin: 0 25px;
+	}
+	.imagemreceita2{
+		padding-top: 300px;
+	}
+}
+@media (max-width: 700px){
+	.imagemreceita2{
+		padding-top: 250px;
+		width: 85%;
+	}
+}
+@media (max-width: 650px){
+	.informacoes3{
+		display: block;
+	}
+	.modo, .beneficios{
+		width: 96%;
+	}
+	.modo h4, .beneficios h4{
+		text-align: center;
+	}
+}

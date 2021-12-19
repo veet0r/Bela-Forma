@@ -1,0 +1,92 @@
+.receitas-container{
+    display: inline-block;
+    margin: 30px 5%;
+    width: 90%;
+    text-align: center;
+    z-index: 2;
+}
+.receitas-titulo{
+    margin: 30px auto;
+    font-weight: bold;
+    color: #a1b900;
+    width: max-content;
+}
+#saudaveis{
+    color: #a1b900;
+    padding: 5px;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #EADEE0 50%, #a1b900 50%);
+    animation: saudaveis 1s both .75s;
+}
+@keyframes saudaveis{
+    100%{
+        color: white;
+        background-position: -100% 0;
+    }
+}
+.receita{
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    max-width: 570px;
+    min-width: 400px;
+    min-height: 300px;
+    text-decoration: none;
+    transition: .5s all;
+    margin: 10px;
+    background-color: #D4DD9B;
+    border-radius: 5px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.receita h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 550;
+    position: absolute;
+    bottom: 8px;
+    left: 11px;
+    transition: .5s all;
+    padding: 3px;
+}
+.r1{
+    background-image: url(../images/vitaminadebanana.jpg);
+}
+.r2{
+    background-image: url();
+}
+.r3{
+    background-image: url();
+}
+.r4{
+    background-image: url();
+}
+.r5{
+    background-image: url();
+}
+.r6{
+    background-image: url();
+}
+.r7{
+    background-image: url();
+}
+.r8{
+    background-image: url();
+}
+.r9{
+    background-image: url();
+}
+.r10{
+    background-image: url();
+}
+.r11{
+    background-image: url();
+}
+.r12{
+    background-image: url();
+}
+.espacamento{
+    margin-bottom: 20px;
+}

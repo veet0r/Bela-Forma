@@ -1,0 +1,297 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: monospace;
+	background-color: #EADEE0;
+}
+
+nav{
+	background: #D4DD9B;
+	height: 80px;
+	width: 100%;
+}
+.rodape {
+	padding:40px 0;
+	background-color: #ffffff;
+	color:#4b4c4d;
+  }
+.rodape ul {
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0px
+  }
+  
+.rodape li {
+	padding:0 10px;
+  }
+  
+.rodape ul a {
+	color:inherit 	;
+	text-decoration:none;
+	opacity:0.8;
+  }
+  
+.rodape ul a:hover {
+	opacity:1;
+  }
+  
+.rodape .social {
+	text-align:center;
+	padding-bottom:35px;    
+  }
+  
+  .rodape .social > a {
+	font-size:35px;
+	width:40px;
+	height:40px;
+	line-height:35px;
+	display:inline-block;
+	text-align:center;
+	border-radius: 50%;
+	border:1px solid #c6c6c6;
+	margin:0 15px;
+	color: inherit;
+	opacity:0.75;
+  }
+  
+  .rodape .social > a:hover {
+	opacity:0.9;
+  }
+  
+  .rodape .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
+}
+
+label.logo, label.logo2{
+	color: black;
+	font-size: 30px;
+	line-height: 80px;
+	padding-left: 80px;
+	font-weight: bold;
+}
+label.logo2{
+	display: none;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: black;
+	font-size: 16px;
+	padding: 7px 13px;
+	border-radius: 3px;
+}
+nav a.ativo,nav a:hover{
+		background: #eadee0;
+		transition: .5s;
+		text-decoration: none;
+}
+.checarbotao{
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo, label.logo2{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checarbotao{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #D4DD9B;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	nav a.ativo,nav a:hover{
+		background: none;
+		color: #EADEE0;
+		
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+@media (max-width: 281px){
+	label.logo{
+		display: none;
+	}
+	label.logo2{
+		display: block;
+	}
+}
+.imagemreceita1{
+    max-width: auto;
+    margin: 0 auto;
+    background: #EADEE0;
+    font-size: 35px;
+    padding: 0px;
+}
+.parallax{
+    background: url("../images/test.jpg") no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.informacoes2{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.image-container, .materiais{
+	width: 46%;
+	margin: 0 2%;
+}
+.materiais h3{
+	text-align: center;
+}
+.materiais ul{
+	margin: 0 auto;
+	width: max-content;
+}
+.imagemreceita2{
+    width: 100%;
+	min-width: 650px;
+    background: url("../images/placeholder.png");
+    font-size: 35px;
+    padding-left: 15px;
+    padding-top: 400px;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+.informacoes{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.aerobico-idade{
+	width: 46%;
+	margin-right: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.aerobico-idade p{
+	text-align: center;
+}
+.idade, .aerobico{
+	margin: 20px;
+}
+.titulo-desc{
+	width: 46%;
+	margin-left: 2%;
+    text-align: justify;
+}
+.informacoes3{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+.modo, .beneficios{
+	width: 46%;
+	margin: 0 2%;
+}
+@media (max-width: 1130px){
+	.informacoes2{
+		display: block;
+	}
+	.image-container, .materiais{
+		width: 96%;
+		margin: 0 auto;
+	}
+	.imagemreceita2{
+		width: 70%;
+		min-width: 0;
+		margin: 0 auto;
+	}
+	.materiais{
+		margin-top: 15px;
+	}
+}
+@media (max-width: 809px){
+	.informacoes{
+		display: block;
+	}
+	.titulo-desc, .aerobico-idade{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.aerobico-idade{
+		display: inline-block;
+	}
+	.titulo-desc p{
+		text-align: justify;
+		margin: 0 25px;
+	}
+	.imagemreceita2{
+		padding-top: 300px;
+	}
+}
+@media (max-width: 700px){
+	.imagemreceita2{
+		padding-top: 250px;
+		width: 85%;
+	}
+}
+@media (max-width: 650px){
+	.informacoes3{
+		display: block;
+	}
+	.modo, .beneficios{
+		width: 96%;
+	}
+	.modo h4, .beneficios h4{
+		text-align: center;
+	}
+	
+
+	}
