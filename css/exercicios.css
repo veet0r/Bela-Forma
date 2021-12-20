@@ -6,6 +6,7 @@
     width: max-content;
     margin: 60px auto 30px auto;
     color: #a1b900;
+    font-size: 35px;
 }
 #de-lazer{
     color: #a1b900;
@@ -45,10 +46,13 @@
     width: 275px;
     height: 275px;
 }
+.diferenca{
+    text-align: center;
+}
 .diferenca p{
     text-align: justify;
     margin-top: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 @media (max-width: 1175px){
     .atividade{

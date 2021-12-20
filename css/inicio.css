@@ -175,7 +175,7 @@ main button:hover:after{
 	position: relative;
 	padding: 35px;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 }
 .sobrenos-img{
