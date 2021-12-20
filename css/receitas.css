@@ -55,38 +55,45 @@
     background-image: url(../images/vitaminadebanana.jpg);
 }
 .r2{
-    background-image: url();
+    background-image: url(../images/bolodechocolatecommorango.png);
 }
 .r3{
-    background-image: url();
+    background-image: url(../images/bolointegraldebanana.png);
 }
 .r4{
-    background-image: url();
+    background-image: url(../images/omelete.png);
 }
 .r5{
-    background-image: url();
+    background-image: url(../images/panquecadebananacomaveia.png);
 }
 .r6{
-    background-image: url();
+    background-image: url(../images/paodeaveia.png);
 }
 .r7{
-    background-image: url();
+    background-image: url(../images/picoledemorango.png);
 }
 .r8{
-    background-image: url();
+    background-image: url(../images/picoledesaladadefrutas.png);
 }
 .r9{
-    background-image: url();
+    background-image: url(../images/pizzadefrigideira.png);
 }
 .r10{
-    background-image: url();
+    background-image: url(../images/puredebatata.png);
 }
 .r11{
-    background-image: url();
+    background-image: url(../images/saladadefrutas.png);
 }
 .r12{
-    background-image: url();
+    background-image: url(../images/sopadelegumes.png);
 }
 .espacamento{
     margin-bottom: 20px;
+}
+@media (max-width: 499px){
+    .receita{
+        width: 85%;
+        min-width: 250px;
+        min-height: 160px;
+    }
 }

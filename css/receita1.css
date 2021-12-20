@@ -19,8 +19,11 @@
 .titulo-desc{
 	width: 48%;
 	margin-left: 2%;
-    text-align: justify;
-	margin-top: 5%;
+    text-align: center;
+	margin-top: 5% auto;
+}
+.titulo-desc p{
+	text-align: center;
 }
 .tempodepreparo{
 	width: 48%;
@@ -63,6 +66,9 @@
 	margin: 0 2%;
 	text-align: center;
 }
+.itens p{
+	margin: 10px 0;
+}
 #first{
 	margin-top: 20px;
 }
@@ -76,40 +82,40 @@
     background-position: center;
 }
 .img1{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/vitaminadebanana.jpg);
 }
 .img2{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/bolodechocolatecommorango.png);
 }
 .img3{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/bolointegraldebanana.png);
 }
 .img4{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/omelete.png);
 }
 .img5{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/panquecadebananacomaveia.png);
 }
 .img6{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/paodeaveia.png);
 }
 .img7{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/picoledemorango.png);
 }
 .img8{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/picoledesaladadefrutas.png);
 }
 .img9{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/pizzadefrigideira.png);
 }
 .img10{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/puredebatata.png);
 }
 .img11{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/saladadefrutas.png);
 }
 .img12{
-	background-image: url("../images/vitaminadebanana.jpg");
+	background-image: url(../images/sopadelegumes.png);
 }
 .informacoes3{
 	display: flex;
@@ -121,13 +127,13 @@
 	width: 48%;
 	margin: 0 0 0 2%;
 }
+.beneficios h4,.modo h4{
+	font-size: 27px;
+}
 .modo{
 	text-align: center;
 	width: 48%;
 	margin: 0 2% 0 0;
-}
-.beneficios h4,.modo h4{
-	font-size: 27px;
 }
 .modo p{
 	width: 75%;
@@ -181,7 +187,7 @@
 		display: inline-block;
 	}
 	.titulo-desc p{
-		text-align: justify;
+		text-align: center;
 		margin: 0 25px;
 	}
 	.imagemreceita2{
@@ -197,6 +203,12 @@
 		width: 85%;
 	}
 }
+@media (max-width: 684px){
+	.imagemreceita{
+		min-width: 300px;
+		padding-top: 250px;
+	}
+}
 @media (max-width: 650px){
 	.informacoes3{
 		display: block;
@@ -206,5 +218,17 @@
 	}
 	.modo h4, .beneficios h4{
 		text-align: center;
+	}
+	.beneficios p{
+		width: 75%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+@media (max-width: 450px){
+	.imagemreceita{
+		padding-top: 200px;
+		width: 80%;
+		margin: 0 auto;
 	}
 }
