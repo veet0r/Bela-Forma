@@ -12,7 +12,7 @@ function imc(){
         if (altura > 60){
             if (valorIMC < 18.5){
                 titulor = 'Você está abaixo do peso.';
-                classificacao = 'abaixo do peso ideal. Dê uma olhada nos artigos de alimentação saudável. Se não conseguir aumentar de peso, procure um médico.';
+                classificacao = 'abaixo do peso ideal. Dê uma olhada na página de receitas saudáveis, mas se não conseguir aumentar de peso, procure um médico.';
             }else if (valorIMC < 25){
                 titulor = 'Você está com o peso ideal.';
                 classificacao = 'com peso ideal. Parabéns por manter seu corpo saudável!';
@@ -21,7 +21,7 @@ function imc(){
                 classificacao = 'levemente acima do peso. Não é uma situação complicada, mas cuidado para não fugir do seu controle.';
             }else if (valorIMC < 35){
                 titulor = 'Você está com sobrepeso.';
-                classificacao = 'com obesidade grau I. Recomendamos que confira nossos artigos.';
+                classificacao = 'com obesidade grau I. Recomendamos que confira nossas receitas saudáveis.';
             }else if (valorIMC < 40){
                 titulor = 'Você está com sobrepeso elevado.';
                 classificacao = 'com obesidade grau II. Recomendamos que procure um médico.';
