@@ -3,7 +3,8 @@
     width: 80%;
 }
 .container .titulo{
-    width: max-content;
+    width: auto;
+    text-align: center;
     margin: 60px auto 30px auto;
     color: #a1b900;
     font-size: 35px;
